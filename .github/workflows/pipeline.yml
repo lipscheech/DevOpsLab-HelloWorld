@@ -21,7 +21,7 @@ jobs:
           #exit-zero treats all erros as warnings. The github editor is 127 chars wide
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   tests:
-    needs: lent
+    needs: lint
     runs-on: ubuntu-20.04
     strategy:
       matrix:
